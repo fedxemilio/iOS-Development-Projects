@@ -1,0 +1,35 @@
+import UIKit
+
+let randomStorySelection: Int = Int.random(in: 1...3)
+
+func generateMadLib0(adj: String, prep: String, noun: String, word: String, duration: String, adj2: String, v: String, noun1: String, event: String, noun2: String, v2: String, noun3: String, v3: String, noun4: String, v4: String, adj4: String, word2: String, v5: String, noun5: String, v6: String, noun6: String, saying: String, adj7: String, v7: String, noun8: String, noun9: String, noun10: String, adj8: String, futureDate: String, noun11: String) -> String {
+    //add to a list?
+    var wordList = [adj, prep, noun, word, duration, adj2, v, noun1, event, noun2, v2, noun3, v3, noun4, v4, adj4, word2, v5, noun5,
+    v6, noun6, saying, adj7, v7, noun8, noun9, noun10, adj8, futureDate, noun11]
+    
+    for word in wordList {
+        if word.isEmpty {
+            return "Invalid Input"
+        }
+    }
+    switch randomStorySelection {
+    case 1: return "It's a real \(adj) wonky evening \(prep) my \(noun). Grandma and \(word)pa are visiting for \(duration) and mum's \(adj2) idea was to \(v) out together. I know this \(noun1) will be a real \(event). \"Where my \(noun2) at?\", \(v2)s the old \(noun3) as she and \(word)pa finally \(v3) waddle their \(noun4) over. Together we \(v4) up to this \(adj4)-as \(word2) diner. Then grandma immediately \(v5)s \(noun5) in her pants. And \(word)pa forgot to \(v6) his \(noun6). Oh joy. But \(saying) cause my \(adj7) dad \(v7)-ed his \(noun8) at home. And just like that, our \(noun9)-ful family \(noun10)ing is \(adj8) and ruined. Maybe \(futureDate) we'll get our \(noun11) together."
+    case 2: return "Have you ever taken a \(adj) walk \(prep) the town \(noun)? \(word) is a \(duration)-old \(adj2) monument you can come \(v) at. It's a popular \(noun1) for \(event). It's shiny \(noun2) was \(v2) from old \(noun3) called \(word) which is easy to \(v3) its \(noun4) over. Just last year I \(v4) a report on the \(adj4) \(word2) tribe. They are known for \(v5)ing \(noun5) which is evident by the way the \(word) \(v6)s all over the \(noun6). Their motto is \(saying). I respect the \(adj7) way they \(v7)-ed our \(noun8) village here at home. Their \(noun9) is the core \(noun10) of our \(adj8) lives. Maybe \(futureDate) we can see \(noun11) together. :("
+    case 3: return "There's \(adj) snow falling \(prep) the \(noun)! We haven't seen this kind of \(word) since \(duration) ago. This \(adj2) event may just \(v) out the whole human \(noun1), like the \(event). This is the \(noun2)! The very end! People start \(v2)ing as they run for \(noun3) but the \(word) continues \(v3)ing on their \(noun4)s. As things \(v4)-alate up it gets more \(adj4)  around \(word2) square. Someone \(v5)s my \(noun5) with their foot. \"\(word2)\", I shout and \(v6) to the \(noun6). \(saying) as they say. When I awake on the \(adj7) ground \(v7)-ed in \(noun8) and blood, the whole town is \(noun9)-ful without a \(noun10) in sight. My \(adj8) hurts but I need to make it to \(futureDate) for some \(noun11)."
+    default: return "Wuuuuut"
+        }
+}
+
+generateMadLib0(adj: "bad", prep: "over", noun: "boot", word: "ding", duration: "forever", adj2: "smelly", v: "kick", noun1: "string", event: "mass", noun2: "horn", v2: "horn", noun3: "bomb", v3: "bomb", noun4: "house", v4: "serve", adj4: "rachet", word2: "wow", v5: "throw", noun5: "pants", v6: "show", noun6: "finger", saying: "cat's out of the bag", adj7: "small", v7: "bite", noun8: "bat", noun9: "cow", noun10: "shoe", adj8: "ugly", futureDate: "tomorrow", noun11: "pile")
+
+//func generateMadLib(adj: String, prep: String, noun: String, word: String, duration: String, adj2: String, v: String, noun1: String, event: String, noun2: String, v2: String, noun3: String, v3: String, noun4: String, v4: String, adj4: String, word2: String, v5: String, noun5: String, v6: String, noun6: String, saying: String, adj7: String, v7: String, noun8: String, noun9: String, noun10: String, adj8: String, futureDate: String, noun11: String) -> String {
+//    "It's a real \(adj) wonky evening \(prep) my \(noun). Grandma and \(word)pa are visiting for \(duration) and mum's \(adj2) idea was to \(v) out together. I know this \(noun1) will be a real \(event). \"Where my \(noun2) at?\", \(v2)s the old \(noun3) as she and \(word)pa finally \(v3) waddle their \(noun4) over. Together we \(v4) up to this \(adj4)-as \(word2) diner. Then grandma immediately \(v5)s \(noun5) in her pants. And \(word)pa forgot to \(v6) his \(noun6). Oh joy. But \(saying) cause my \(adj7) dad \(v7)-ed his \(noun8) at home. And just like that, our \(noun9)-ful family \(noun10)ing is \(adj8) and ruined. Maybe \(futureDate) we'll get our \(noun11) together."
+//
+//}
+//func generateMadLib2(adj: String, prep: String, noun: String, word: String, duration: String, adj2: String, v: String, noun1: String, event: String, noun2: String, v2: String, noun3: String, v3: String, noun4: String, v4: String, adj4: String, word2: String, v5: String, noun5: String, v6: String, noun6: String, saying: String, adj7: String, v7: String, noun8: String, noun9: String, noun10: String, adj8: String, futureDate: String, noun11: String) -> String {
+//    "Have you ever taken a \(adj) walk \(prep) the town \(noun)? \(word) is a \(duration)-old \(adj2) monument you can come \(v) at. It's a popular \(noun1) for \(event). It's shiny \(noun2) was \(v2) from old \(noun3) called \(word) which is easy to \(v3) its \(noun4) over. Just last year I \(v4) a report on the \(adj4) \(word2) tribe. They are known for \(v5)ing \(noun5) which is evident by the way the \(word) \(v6)s all over the \(noun6). Their motto is \(saying). I respect the \(adj7) way they \(v7)-ed our \(noun8) village here at home. Their \(noun9) is the core \(noun10) of our \(adj8) lives. Maybe \(futureDate) we can see \(noun11) together. :("
+//}
+//func generateMadLib3(adj: String, prep: String, noun: String, word: String, duration: String, adj2: String, v: String, noun1: String, event: String, noun2: String, v2: String, noun3: String, v3: String, noun4: String, v4: String, adj4: String, word2: String, v5: String, noun5: String, v6: String, noun6: String, saying: String, adj7: String, v7: String, noun8: String, noun9: String, noun10: String, adj8: String, futureDate: String, noun11: String) -> String {
+//    "There's \(adj) snow falling \(prep) the \(noun)! We haven't seen this kind of \(word) since \(duration) ago. This \(adj2) event may just \(v) out the whole human \(noun1), like the \(event). This is the \(noun2)! The very end! People start \(v2)ing as they run for \(noun3) but the \(word) continues \(v3)ing on their \(noun4)s. As things \(v4)-alate up it gets more \(adj4)  around \(word2) square. Someone \(v5)s my \(noun5) with their foot. \"\(word)\", I shout and \(v6) to the \(noun6). \(saying) as they say. When I awake on the \(adj7) ground \(v7)-ed in \(noun8) and blood, the whole town is \(noun9)-ful without a \(noun10) in sight. My \(adj8) hurts but I need to make it to \(futureDate) for some \(noun11)."
+//    
+//}
